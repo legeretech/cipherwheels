@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<body>
+      <!-- navbar section -->
+      <nav class="wheels-navbar">
+        <div class="wheels-navbar-container">
+            <div class="wheels-navbar-logo">
+
+                <a href="index.html"  class="wheels-navbar-logo-text">
+                    <img style="width: 150px; height: 50px;" src="./images/cipherwheels logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="wheels-navbar-links">
+                <a href="index.html">Home</a>
+                <a href="index.html#about-us">About Us</a>
+                <a href="index.html#services">Services</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+
+            <button class="wheels-navbar-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <!-- navbar section -->
+    <section class="order-detail-container-main" style="margin-top: 50px;">
+    <div class="order-detail-container">
+        <div class="order-detail-card">
+            <div class="order-detail-card-header">
+                <h1 class="order-detail-card-title">Taxi Online Booking</h1>
+            </div>
+            <div class="order-detail-card-content">
+                <form id="order-detail-bookingForm">
+                    <div class="order-detail-form-group">
+                        <label>
+                            <i class="fas fa-user order-detail-icon"></i>
+                            Personal Information
+                        </label>
+                        <input type="text" name="name" placeholder="Full Name" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="order-detail-form-group">
+                        <label>
+                            <i class="fas fa-map-marker-alt order-detail-icon"></i>
+                            Booking Details
+                        </label>
+                        <input type="text" name="pickupLocation" placeholder="Pickup Location" required>
+                        <input type="text" name="dropoffLocation" placeholder="Dropoff Location" required>
+                    </div>
+
+                    <div class="order-detail-form-group">
+                        <label>
+                            <i class="fas fa-calendar-alt order-detail-icon"></i>
+                            Date and Time
+                        </label>
+                        <div class="order-detail-date-time-group">
+                            <input type="date" name="date" required>
+                            <input type="time" name="time" required>
+                        </div>
+                    </div>
+
+                    <div class="order-detail-form-group">
+                        <label>
+                            <i class="fas fa-car order-detail-icon"></i>
+                            Car Type
+                        </label>
+                        <select name="carType" required>
+                            <option value="">Select car type</option>
+                            <option value="sedan">Sedan</option>
+                            <option value="suv">SUV</option>
+                            <option value="luxury">Luxury</option>
+                        </select>
+                    </div>
+
+              <a href="oderdetail.html" style="text-align: center; text-decoration: none;"  type="submit" class="order-detail-button">Book Now</a>   
+                </form>
+            </div>
+        </div>
+    </div>
+
+</section>
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+
+
+                <img style="width: 200px;" src="./images/cipherwheels logo.png" alt="">
+
+            </div>
+
+            <div class="footer-top">
+                <div class="footer-column">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>About Us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Our Services</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Careers</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Press & Media</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>For Riders</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>How to Book</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Ride Types</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Safety Guidelines</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Cities</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Fare Estimate</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>For Drivers</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Become a Driver</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Requirements</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Earnings</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Vehicle Solutions</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i>Driver Safety</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Download Our App</h3>
+                    <p style="color: #999; margin-bottom: 15px;">Get the best ride-sharing experience with our mobile
+                        app</p>
+                    <div class="footer-app-downloads">
+                        <a href="#" class="footer-app-button">
+                            <i class="fab fa-google-play"></i>
+                            <div class="footer-button-text">
+                                <div class="footer-small-text">GET IT ON</div>
+                                <div class="footer-large-text">Google Play</div>
+                            </div>
+                        </a>
+                        <a href="#" class="footer-app-button">
+                            <i class="fab fa-apple"></i>
+                            <div class="footer-button-text">
+                                <div class="footer-small-text">Download on the</div>
+                                <div class="footer-large-text">App Store</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <div class="footer-bottom-content">
+                    <p style="color: #999;">&copy; 2024 Cipherwheels. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Terms of Use</a>
+                        <a href="#">Legal</a>
+                    </div>
+                    <div class="footer-social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- footer section -->
+    <script>
+        document.getElementById('order-detail-bookingForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const formData = new FormData(this);
+            const bookingData = Object.fromEntries(formData);
+            console.log('Booking data:', bookingData);
+            alert('Booking submitted successfully!');
+        });
+    </script>
+      <!-- navbar section -->
+      <script>
+        // Hamburger menu functionality
+        const hamburger = document.querySelector('.wheels-navbar-hamburger');
+        const navLinks = document.querySelector('.wheels-navbar-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Scroll functionality
+        let lastScroll = 0;
+        const navbar = document.querySelector('.wheels-navbar');
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll <= 0) {
+                navbar.classList.remove('hidden');
+                return;
+            }
+
+            if (currentScroll > lastScroll && !navbar.classList.contains('hidden')) {
+                // Scrolling down
+                navbar.classList.add('hidden');
+            } else if (currentScroll < lastScroll && navbar.classList.contains('hidden')) {
+                // Scrolling up
+                navbar.classList.remove('hidden');
+            }
+
+            lastScroll = currentScroll;
+        });
+    </script>
+    <!-- navbar section -->
+</body>
+
+</html>
