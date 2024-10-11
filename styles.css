@@ -27,7 +27,7 @@ body {
 }
 
 .wheels-navbar-container {
-    max-width: 1400px;
+    max-width: 1420px;
     margin: 0 auto;
     padding: 0 2rem;
     display: flex;
@@ -468,7 +468,7 @@ body {
 }
 
 .about-us-wheel-container {
-    max-width: 1400px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0 30px;
 }
@@ -664,7 +664,7 @@ body {
     }
 
     .about-us-wheel-feature-item {
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
@@ -697,87 +697,98 @@ body {
 /* about section */
 
 /* review section */
-.wheels-cus-review-section {
-    max-width: 100%;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #442c47, #721081);
+     /* review section */
+     .wheels-cus-review-section {
+        max-width: 100%;
+        padding: 60px 20px;
+        background: linear-gradient(135deg, #442c47, #721081);
+    }
+    .wheels-cus-review-container {
+        max-width: 1300px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .wheels-cus-review-slider {
+        display: flex;
+        transition: transform 0.3s ease;
+        cursor: grab;
+    }
+    .wheels-cus-review-slider:active {
+        cursor: grabbing;
+    }
+    .wheels-cus-review-card {
+        flex: 0 0 300px;
+        margin-right: 20px;
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        padding: 25px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .wheels-cus-review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+    .wheels-cus-review-card img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border: 3px solid #7b1fa2;
+    }
+    .wheels-cus-review-card h3 {
+        margin: 0 0 10px 0;
+        color: #4a148c;
+        font-size: 1.2em;
+    }
+    .wheels-cus-review-card p {
+        color: #666;
+        font-size: 0.9em;
+        line-height: 1.6;
+    }
+    .wheels-cus-stars {
+        color: #ffd700;
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+    .wheels-cus-section-title {
+        text-align: center;
+        color: white;
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    }
+    .wheels-cus-nav-buttons {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .wheels-cus-nav-button {
+        background-color: white;
+        border: none;
+        color: #4a148c;
+        font-size: 1.5em;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    .wheels-cus-nav-button:hover {
+        background-color: #f3e5f5;
+        transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+.wheels-cus-nav-buttons{
+    display: none;
 }
-.wheels-cus-review-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.wheels-cus-review-slider {
-    display: flex;
-    transition: transform 0.3s ease;
-    cursor: grab;
-}
-.wheels-cus-review-slider:active {
-    cursor: grabbing;
-}
-.wheels-cus-review-card {
-    flex: 0 0 300px;
-    margin-right: 20px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    padding: 25px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.wheels-cus-review-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-.wheels-cus-review-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 3px solid #7b1fa2;
-}
-.wheels-cus-review-card h3 {
-    margin: 0 0 10px 0;
-    color: #4a148c;
-    font-size: 1.2em;
-}
-.wheels-cus-review-card p {
-    color: #666;
-    font-size: 0.9em;
-    line-height: 1.6;
-}
-.wheels-cus-stars {
-    color: #ffd700;
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-.wheels-cus-section-title {
-    text-align: center;
-    color: white;
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
-.wheels-cus-nav-buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-}
-.wheels-cus-nav-button {
-    background-color: white;
-    border: none;
-    color: #4a148c;
-    font-size: 1.5em;
-    padding: 10px 20px;
-    margin: 0 10px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.wheels-cus-nav-button:hover {
-    background-color: #f3e5f5;
-    transform: scale(1.05);
-}
+    }
+
+
+    
+    /* review section */
 /* review section */
 
 
@@ -789,7 +800,7 @@ body {
 }
 
 .vehicle-modal-container {
-    max-width: 1400px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -955,7 +966,7 @@ body {
 } */
 
 .cipher-wheels-services-section {
-    max-width: 1400px;
+    max-width: 1350px;
     margin: 0 auto;
 
     padding: 80px 20px;
@@ -1048,7 +1059,7 @@ body {
 
 /* blog section */
 .blog-section {
-    max-width: 1400px;
+    max-width: 1350px;
     margin: 40px auto;
     padding: 0 20px;
     margin-top: 80px;
@@ -1688,8 +1699,8 @@ body {
 
 .order-detail-container {
     width: 100%;
-    max-width: 600px;
-    padding: 20px;
+    max-width: 1350px;
+    padding: 30px;
 }
 
 .order-detail-card {
@@ -1785,7 +1796,7 @@ select {
 
 }
 .booking-detail-container {
-    max-width: 800px;
+    max-width: 1300px;
     margin: 20px auto;
     margin-bottom: 90px;
     margin-top: 150px;
